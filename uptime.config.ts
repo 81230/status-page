@@ -1,24 +1,22 @@
 const pageConfig = {
-  title: "lyc8503's Status Page",
+  title: "状态页",
   links: [
-    { link: 'https://github.com/lyc8503', label: 'GitHub' },
-    { link: 'mailto:me@lyc8503.site', label: 'Email Me', highlight: true },
+    { link: 'mailto:me@812300.xyz', label: 'Email Me', highlight: true },
   ],
 }
 
 const workerConfig = {
   kvWriteCooldownMinutes: 3,
-  passwordProtection: 'username:password',
   monitors: [
     {
-      id: 'google_monitor',
-      name: 'My Google Monitor',
+      id: 'mail_api_monitor',
+      name: 'My Mail API Monitor',
       method: 'GET',
-      target: 'https://www.google.com'
+      target: 'https://mail-api.82300.xyz'
     },
     {
-      id: 'ssh_monitor',
-      name: 'Example SSH Monitor',
+      id: 'gateway_monitor',
+      name: 'My Application Gateway Monitor',
       method: 'TCP_PING',
       target: 'router.wg.812300.xyz:22'
     },
